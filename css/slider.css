@@ -1,0 +1,124 @@
+@import url("fonts.css");
+
+.wrapper {
+  width: 1440px;
+  height: auto;
+}
+
+
+.slider {
+  color: white;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 190.96%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 52px 1fr;
+  padding: 107px 134px 125px 134px;
+  background-color: black;
+  column-gap: 50px;
+
+}
+
+.slider h1 {
+  color: #E3B873;
+  font-family: Yeseva One;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138.6%;
+  letter-spacing: -1.89px;
+  text-transform: uppercase;
+  width: 60%;
+}
+
+.slider h2 {
+  color: #E3B873;
+  font-family: Yeseva One;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138.6%;
+  letter-spacing: -1.89px;
+  text-transform: uppercase;
+}
+
+.slider__description {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  padding-top: 50px;
+}
+
+.slider__projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 34px;
+}
+
+.slider__nav-first,
+.slider__nav-second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.slider__nav-first {
+  width: 50%;
+  font-size: 2em;
+}
+
+
+.slider__nav-first li,
+.slider__nav-second li {
+  color: #FFF;
+  opacity: 0.5;
+
+}
+
+.slider__nav-second li {
+  text-transform: uppercase;
+  font-family: Yeseva One;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138.6%;
+
+}
+
+.slider .slider__nav-first_selected {
+  opacity: 1;
+}
+
+.slider .slider__nav-second_selected {
+  color: #E3B873;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #E3B873;
+  opacity: 1;
+
+}
+
+
+.slider img {
+  width: auto;
+  height: auto;
+}
+
+
+#slider-area::after {
+  content: " m2";
+}
+
+#slider-time::after {
+  content: " months";
+}
+
+.slider__nav-first li:hover,
+.slider__nav-second li:hover {
+  cursor: pointer;
+}

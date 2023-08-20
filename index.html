@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="css/slider.css" rel="stylesheet" />
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="slider">
+            <section class="slider__description">
+                <h1>Completed projects &nbsp&nbsp&nbsp----------</h1>
+                <p>
+                    Only a small part of the work performed by our company is presented on the site.
+                    For 14 years on in the construction
+                    market we have made happy more than 1000 families
+                </p>
+                <div class="slider__projects">
+                    <div>
+                        <h2>CITY:</h2>
+                        <p id="slider-city"></p>
+                        <p id="slider-theme"></p>
+                    </div>
+                    <div>
+                        <h2>APARTMENT AREA:</h2>
+                        <p id="slider-area"></p>
+                    </div>
+                    <div>
+                        <h2>REPAIR TIME:</h2>
+                        <p id="slider-time"></p>
+                    </div>
+                    <div>
+                        <h2>REPAIR-COST:</h2>
+                        <p id="slider-cost"></p>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul class="slider__nav-first">
+                        <li class="slider__nav-first_selected" onclick="slider.iterSliderItem(false)">&#10229</li>
+                        <li onclick="slider.selectSliderItem(0)">&#8226</li>
+                        <li onclick="slider.selectSliderItem(1)">&#8226</li>
+                        <li onclick="slider.selectSliderItem(2)">&#8226</li>
+                        <li class="slider__nav-first_selected" onclick="slider.iterSliderItem(true)">&#10230</li>
+                    </ul>
+                </nav>
+            </section>
+
+            <nav>
+                <ul class="slider__nav-second">
+                    <li onclick="slider.selectSliderItem(0)">Rostov-on-Don, Admiral</li>
+                    <li onclick="slider.selectSliderItem(1)">Sochi Thieves</li>
+                    <li onclick="slider.selectSliderItem(2)">Rostov-on-Don Patriotic</li>
+                </ul>
+            </nav>
+
+            <section class="slider__images">
+                <img id='slider-img' src="img/image1.jpg" alt="img">
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
